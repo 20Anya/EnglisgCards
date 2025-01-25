@@ -153,16 +153,8 @@ def get_user_step(cid):
     if old_user.first():
         return True
     else:
-        add_visible(cid, True, 1)
-        add_visible(cid, True, 2)
-        add_visible(cid, True, 3)
-        add_visible(cid, True, 4)
-        add_visible(cid, True, 5)
-        add_visible(cid, True, 6)
-        add_visible(cid, True, 7)
-        add_visible(cid, True, 8)
-        add_visible(cid, True, 9)
-        add_visible(cid, True, 10)
+        for i in range(1, 11):
+            add_visible(cid, True, i)
 
 
 
