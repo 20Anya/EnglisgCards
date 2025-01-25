@@ -10,10 +10,10 @@ from telebot import types, TeleBot, custom_filters
 from telebot.storage import StateMemoryStorage
 from telebot.handler_backends import State, StatesGroup
 
-user = 'postgres'  #имя пользователя
+user = ''  #имя пользователя
 password = ''  #пароль пользователя
 host = ''  #адрес хоста
-port = 5432  #номер порта
+port = ''  #номер порта
 name_db = ''  #название базы данных
 
 DSN = f'postgresql://{user}:{password}@{host}:{port}/{name_db}'
